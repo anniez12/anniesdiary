@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=BenchNine:wght@300&family=Handlee&family=Nerko+One&family=Press+Start+2P&family=Quicksand&family=Archivo:wght@100&family=Reenie+Beanie&display=swap');
+
+$font-bebas: 'Bebas Neue', cursive;
+$font-benchnine: 'BenchNine', sans-serif;
+$font-handlee: 'Handlee', cursive;
+$font-nerko: 'Nerko One', cursive;
+$font-press2p: 'Press Start 2P', cursive;
+$font-quicksand: 'Quicksand', sans-serif;
+$font-reenie: 'Reenie Beanie', cursive;
+$font-archivo: 'Archivo', sans-serif;
+
+$color-melon: #e0ac9d;
+$color-midred: #e88873;
+$color-brown: #a37774;
+$color-cadet: #5c6d70;
+$color-grey: #484a47;
+
+html {
+    font-size: calc(0.85em + 1vw);
+    color: $color-grey;
+}
+
+h1 {
+    font-family: $font-reenie;
+    font-size: 9.5em;
+    line-height: 0.8em;
+}
+
+h2 {
+    font-family: $font-reenie;
+    font-size: 5em;
+    color: rgb(250, 234, 232);
+}
+
+h3, h4, h5 {
+    font-family: $font-quicksand;
+}
+
+p {
+    font-family: $font-archivo;
+    font-size: 0.9em;
+    color: $color-grey;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $color-melon;
+    overflow-x: hidden;
+    &:before {
+        animation: grain 8s steps(10) infinite;
+        background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paper-pattern.png");
+        content: "";
+        height: 300%;
+        left: -50%;
+        opacity: 0.3;
+        position: fixed;
+        top: -200%;
+        width: 300%;
+        z-index: -999;
+      }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes grain {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+    10% {
+      transform: translate(5%, 10%);
+    }
+    20% {
+      transform: translate(15%, 5%);
+    }
+    30% {
+      transform: translate(7%, 25%);
+    }
+    40% {
+      transform: translate(5%, 25%);
+    }
+    50% {
+      transform: translate(15%, 10%);
+    }
+    60% {
+      transform: translate(15%, 0%);
+    }
+    70% {
+      transform: translate(0%, 15%);
+    }
+    80% {
+      transform: translate(3%, 35%);
+    }
+    90% {
+      transform: translate(10%, 10%);
+    }
+  }

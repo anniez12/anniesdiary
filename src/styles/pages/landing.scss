@@ -1,0 +1,112 @@
+.landing-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.landing-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    max-width: 100vw;
+    max-height: 100vh;
+    position: absolute;
+    overflow: hidden;
+}
+
+.landing-title-single {
+    position: relative;
+}
+
+.landing-img-containers {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.landing-img-delimiters {
+    z-index: 1;
+    flex-direction: column;
+}
+
+.landing-img-annie {
+    z-index: 2;
+}
+
+.landing-img-annie,
+.landing-img-delimiters {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-text {
+    font-family: $font-reenie;
+}
+
+.landing-title-single {
+    color: papayawhip;
+    opacity: 0.4;
+    transform: translateY(-100px);
+}
+
+.landing-title-chosen {
+    opacity: 0.8 !important;
+}
+
+@keyframes noise-anim {
+    $steps: 50;
+    @for $i from 0 through $steps {
+      #{percentage($i*(1/$steps))} {
+        $top: random(100);
+        $bottom: random(101 - $top);
+        $topWithPercent: $top * 1%;
+        $bottomWithPercent: $bottom * 1%;
+        clip-path: inset(#{$topWithPercent} 0 #{$bottomWithPercent} 0);
+      }
+    }
+  }
+  .landing-title::after {
+    content: attr(title);
+    position: absolute;
+    left: 2px;
+    text-shadow: -1px 0 blue;
+    top: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: noise-anim 2s infinite linear alternate-reverse;
+  }
+  
+  @keyframes noise-anim-2 {
+    $steps: 50;
+    @for $i from 0 through $steps {
+      #{percentage($i*(1/$steps))} {
+        $top: random(100);
+        $bottom: random(101 - $top);
+        $topWithPercent: $top * 1%;
+        $bottomWithPercent: $bottom * 1%;
+        clip-path: inset(#{$topWithPercent} 0 #{$bottomWithPercent} 0);
+      }
+    }
+  }
+  .landing-title::before {
+    content: attr(title);
+    position: absolute;
+    left: -1px;
+    text-shadow: 1px 0 red;
+    top: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: noise-anim-2 15s infinite linear alternate-reverse;
+  }

@@ -1,0 +1,23 @@
+.doodles { 
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+.doodles-info {
+    background-color: $color-melon;
+    min-height: 100vh;
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 4em 1em 1em;
+
+    h2 {
+        margin-right: 1em;
+    }
+}
+
+.doodles-content {
+    flex: 70%
+    
+}

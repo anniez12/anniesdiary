@@ -1,0 +1,48 @@
+.navigation {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    z-index: 999;
+    padding: 1em;
+    color: $color-cadet;
+    sup {
+        opacity: 0.6;
+        margin-right: 0.3em;
+    }
+}
+
+.nav-link {
+    font-family: $font-quicksand;
+}
+.slider {
+    position: absolute;
+    display:block;
+    margin:0 auto;
+    height: 4px;
+    background-color: $color-midred;
+    width: 0%;
+    transition: width 0.4s ease;
+}
+
+.nav-link sup {
+    position:relative;
+    display: inline-block;
+    transition: all 0.3s ease-out;
+}
+.nav-link:hover .slider {
+    width: 100%;
+}
+.nav-link {
+    position:relative;
+    display:inline-block;
+    transition: all 0.3s ease-out;
+}
+    
+.nav-active {
+    sup {
+        border-bottom: 4px solid $color-midred;
+    }
+    color: $color-midred;
+    pointer-events: none;
+}

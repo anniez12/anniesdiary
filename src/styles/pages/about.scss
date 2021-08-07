@@ -1,0 +1,59 @@
+.about {
+    display: flex;
+    height: 100vh;
+}
+
+.about-title {
+    background-color: $color-melon;
+    flex: 30%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    h2 {
+        padding: 0 0.2em 0.2em 0;
+    }
+}
+
+.about-text-small {
+    font-size: 0.7em;
+}
+
+.about-content {
+    flex: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding : 4em 2em 1em;
+    text-align: justify;
+
+    img {
+        width: 400px;
+    }
+}
+
+.about-signature {
+    text-align: right;
+    margin-right: 3em;
+}
+
+.about-footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    .about-footer-img {
+        margin-right : 1em;
+    }
+
+    .about-footer-legend {
+        align-self: flex-end;
+        text-align: left;
+        width: 30%;
+        border-left: 4px solid $color-midred;
+        padding: 1em 0 1em 1em;
+        font-size: 0.7em;
+        font-style: italic;
+    }
+}
+
