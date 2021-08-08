@@ -4,6 +4,7 @@ import Stickers from "./pages/Stickers";
 import About from "./pages/About";
 import Doodles from "./pages/Doodles";
 import Web from "./pages/Web";
+import Contact from "./pages/Contact";
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { AnimatePresence } from "framer-motion";
 import WorkCP from "./pages/WorkCP";
@@ -21,6 +22,7 @@ const App = () => {
                 <Route path="/web" exact component = {Web} />
                 <Route path="/doodles" exact component = {Doodles} />
                 <Route path="/stickers" exact component = {Stickers} />
+                <Route path="/contact" exact component = {Contact} />
                 <Route path="/web/cafepekoe" exact component = {WorkCP} />
                 <Route path="/web/moonwave" exact component = {WorkMW} />
                 <Route path="/web/anniesdiary" exact component = {WorkAD} />

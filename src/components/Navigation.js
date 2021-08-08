@@ -22,6 +22,9 @@ const Navigation = () => {
             <NavLink exact to="/stickers" className="nav-link" activeClassName="nav-active">
             <sup>05<span class="slider"></span></sup>stickers
             </NavLink>
+            <NavLink exact to="/contact" className="nav-link" activeClassName="nav-active">
+            <sup>06<span class="slider"></span></sup>contact
+            </NavLink>
         </motion.div>
     )
 }

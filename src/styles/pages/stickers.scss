@@ -1,0 +1,48 @@
+.stickers-header { 
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.stickers-info {
+    background-color: $color-melon;
+    height: 50vh;
+    flex: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 3em 2em 2em;
+}
+
+.stickers-title {
+    flex: 35vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 2em;
+    .stickers-title-highlight {
+        opacity: 1 !important;
+    }
+    h2 {
+        opacity: 0.3 !important;
+    }
+}
+
+.stickers-section {
+    padding: 2em;
+    h3 {
+        margin-bottom: 1em;
+    }
+}
+
+.stickers-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    align-items: center;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

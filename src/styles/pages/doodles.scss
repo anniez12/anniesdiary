@@ -1,4 +1,4 @@
-.doodles { 
+.doodles-header { 
     width: 100vw;
     display: flex;
     justify-content: flex-end;
@@ -6,18 +6,95 @@
 }
 .doodles-info {
     background-color: $color-melon;
-    min-height: 100vh;
-    flex: 30%;
+    height: 50vh;
+    flex: 30vh;
     display: flex;
     flex-direction: column;
-    padding: 4em 1em 1em;
+    justify-content: flex-end;
+    padding: 3em 2em 2em;
+}
 
+.doodles-title {
+    flex: 35vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 2em;
+    .doodles-title-highlight {
+        opacity: 1 !important;
+    }
     h2 {
-        margin-right: 1em;
+        opacity: 0.3 !important;
     }
 }
 
 .doodles-content {
-    flex: 70%
+    padding: 2em;
+    h3 {
+        margin-bottom: 1em;
+    }
+}
+
+.doodles-work {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+    grid-gap: 0.5em;
+
+    .doodles-work-img {
+        overflow: hidden;
+        height: 400px;
+    }
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease-out;
+        cursor: pointer;
+        filter: grayscale(80%) blur(1px);
+
+    }
+
+    img:hover {
+        filter: none;
+        transform: scale(1.1);
+    }
+
+    .doodles-work-desc {
+        margin-top: 0.5em;
+        p {
+            margin-top: 0.5em;
+            font-size: 0.8em;
+        }
+
+        h5 {
+            font-size: 0.7em;
+            color: $color-cadet;
+        }
+    }
+}
+
+#popup-bg {
+    z-index: 999;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.95);
+    transition: 0.3 ease-out;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#popup-image {
+    margin: auto;
+    display: block;
+    max-width: 90vw;
+    max-height: 90vh;
     
 }
