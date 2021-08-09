@@ -22,8 +22,23 @@ const Landing = () => {
                     <motion.div className="landing-title-single">
                         <h1>le journal d'annie</h1>
                     </motion.div>
+                    <motion.div className="landing-title-single">
+                        <h1>le journal d'annie</h1>
+                    </motion.div>
                     <motion.div className="landing-title-single landing-title-chosen">
                     <h1 className="landing-title" title="le journal d'annie">le journal d'annie</h1>
+                    </motion.div>
+                    <motion.div className="landing-title-single">
+                        <h1>le journal d'annie</h1>
+                    </motion.div>
+                    <motion.div className="landing-title-single">
+                        <h1>le journal d'annie</h1>
+                    </motion.div>
+                    <motion.div className="landing-title-single">
+                        <h1>le journal d'annie</h1>
+                    </motion.div>
+                    <motion.div className="landing-title-single">
+                        <h1>le journal d'annie</h1>
                     </motion.div>
                     <motion.div className="landing-title-single">
                         <h1>le journal d'annie</h1>
@@ -44,18 +59,18 @@ const Landing = () => {
                             src="img/welcome_delimiters.png" />
                         <motion.p 
                             className="landing-text"
-                            exit= {{ opacity: 0 }}>
+                            exit= {{ opacity: 0 }}
+                            exit={{ opacity: 0, x: 0, y: 100}}
+                            transition={{ type: "spring", stiffness: 100 }}>
                                 cliquez-moi!
                         </motion.p>
                     </motion.div>
-                    <div className="landing-img-annie">
-                        <Link to ="/home">
+                        <Link className="landing-img-annie" to ="/home">
                             <motion.img src="img/welcome_annie.png" 
                                 exit= {{ opacity: 0, x: 0, y: -100 }}
-                                whileHover={{ scale: 1.1, rotate: 15 }}
+                                whileHover={{ rotate: 15 }}
                                 transition={{ type: "spring", stiffness: 100 }}/>
                         </Link>
-                    </div>
                 </div>
             </motion.div>
         </motion.main>

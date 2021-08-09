@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Layout from '../layouts/Layout';
 import DoodleItem from '../components/DoodleItem';
