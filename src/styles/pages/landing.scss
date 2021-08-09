@@ -51,8 +51,17 @@
     justify-content: center;
 }
 
+.landing-img-delimiters img {
+    max-width: 100%;
+    height: auto;
+}
+
+.landing-img-annie img {
+    max-width: 14em !important;
+}
 .landing-text {
     font-family: $font-reenie;
+    font-size: 90px;
 }
 
 .landing-title-single {

@@ -30,7 +30,14 @@ const WorkAD = () => {
                 </motion.div>
                 <div className="web-work-content">
                     <motion.div className="mw-item" variants={page}>
-                        PUT LINK TO GITHUB HERE
+                        <a href="https://github.com/anniez12/anniesdiary" target="_blank">
+                            <motion.img 
+                                initial= {{scale: 0.7}}
+                                whileHover={{scale: 0.8, rotate: 10}}
+                                transition={{type:"spring"}}
+                                src="../img/welcome_delimiters.png" />
+                            <h4>Github &#8594;</h4>
+                        </a>                      
                     </motion.div>
                 </div>
             </motion.div>
