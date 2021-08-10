@@ -30,7 +30,7 @@ const Stickers = () => {
     return (
         <Layout>
             <div className="stickers">
-                <div className="stickers-header">
+                <div className="stickers-header no-select">
                     <motion.div className="stickers-info" variants={pageTitle}>
                         <motion.p variants={page}>Mes autocollants / emotes.
                         </motion.p>
@@ -48,7 +48,7 @@ const Stickers = () => {
                 </div>
                 <div className="stickers-section">
                     <motion.h3 variants={page}><sup>i</sup> les animaux opulents du zodiac<span class="slider"></span></motion.h3>
-                    <motion.div className="stickers-img" variants={page}>
+                    <motion.div className="stickers-img no-select" variants={page}>
                         <img src="../emotesImg/sticker_zodiac_01.png" alt="autocollant - animal du zodiac #1"/>
                         <img src="../emotesImg/sticker_zodiac_02.png" alt="autocollant - animal du zodiac #2"/>
                         <img src="../emotesImg/sticker_zodiac_03.png" alt="autocollant - animal du zodiac #3"/>
@@ -66,7 +66,7 @@ const Stickers = () => {
                 </div>
                 <div className="stickers-section">
                     <motion.h3 variants={page}><sup>ii</sup> valorant<span class="slider"></span></motion.h3>
-                    <motion.div className="stickers-img" variants={page}>
+                    <motion.div className="stickers-img no-select" variants={page}>
                         <img src="../emotesImg/emote_jett_01.png" />
                         <img src="../emotesImg/emote_sage_01.png" />
                     </motion.div>                      

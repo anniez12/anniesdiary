@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Layout from '../layouts/Layout';
+import Footer from '../components/Footer';
 
 const page = {
     initial: { y: -20, opacity: 0 },
@@ -32,7 +33,7 @@ const Contact = () => {
    
     return (
        <Layout>
-            <motion.div variants={page} className="contact">
+            <motion.div variants={page} className="contact no-select">
                     <motion.a 
                         href="mailto:anniezhangweb@gmail.com"
                         transition={{ type: "spring", stiffness: 100 }}>
@@ -43,9 +44,7 @@ const Contact = () => {
                             </div>                       
                             <motion.h3 variants={page}>Contactez-moi &#8594;</motion.h3>
                     </motion.a>
-                    <motion.div className="footer">
-                        <p>© 2021 Annie Zhang</p>
-                    </motion.div>
+                    <Footer />
             </motion.div>
            
        </Layout>

@@ -19,17 +19,17 @@ const WorkMW = () => {
         <Work>
             <motion.div id="work-mw" className="web-work">
                 <motion.div className="web-work-title" variants={page}>
-                    <motion.h2 variants={page}>moonwave</motion.h2>
+                    <motion.h2 className="no-select" variants={page}>moonwave</motion.h2>
                     <motion.h5 variants={page}>illustrator, react, bootstrap, scss</motion.h5>
                     <motion.p variants={page}>Mon projet de session utilisant l'API de TMDB, où nous devions créer le branding et le site web à l'aide de react. </motion.p>
                     <motion.p variants={page}><i>Moonwave est une plateforme de streaming, possédant un immense catalogue de films pour satisfaire les plus grands passionnés du cinéma. Moonwave, le one-way au septième art!</i></motion.p>
-                    <motion.div className="web-work-title-img" variants={page}>
+                    <motion.div className="web-work-title-img no-select" variants={page}>
                         <img src="../img/popcornMonster.png" />
                     </motion.div>
                     
                 </motion.div>
                 <div className="web-work-content">
-                    <motion.div className="mw-item" variants={page}>
+                    <motion.div className="mw-item no-select" variants={page}>
                         <a href="https://moonwave.anniesdiary.com" target="_blank">
                             <motion.img 
                                 initial= {{scale: 0.7}}

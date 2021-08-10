@@ -30,7 +30,7 @@ const About = () => {
     return (
        <Layout>
            <div className="about">
-               <motion.div className="about-title" variants={pageTitle}>
+               <motion.div className="about-title no-select" variants={pageTitle}>
                     <motion.h2 variants={page}>à propos</motion.h2>
                </motion.div>
                <div className="about-content">
@@ -42,7 +42,7 @@ const About = () => {
                         <p className="about-signature">Annie Zhang</p>
                     </motion.p>
                     <motion.div className="about-footer">
-                        <motion.div className="about-footer-img" variants={page}>
+                        <motion.div className="about-footer-img no-select" variants={page}>
                             <img  src="img/crucialMistake.png" alt="annie meurt lorsqu'elle réalise qu'elle a passé une heure sur un bogue à cause qu'elle a écrit {} au lieu de ()." />
                         </motion.div>
                         <motion.div className="about-footer-legend" variants={page}><p>Moment exact lorsque j'ai réalisé que je me suis cassé la tête pendant une heure parce que j'ai accidentellement écrit &#123; &#125; au lieu de ().</p></motion.div>

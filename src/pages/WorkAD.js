@@ -19,17 +19,17 @@ const WorkAD = () => {
         <Work>
             <motion.div id="work-ad" className="web-work">
                 <motion.div className="web-work-title" variants={page}>
-                    <motion.h2 variants={page}>annie's diary</motion.h2>
+                    <motion.h2 className="no-select" variants={page}>annie's diary</motion.h2>
                     <motion.h5 variants={page}>photoshop, react, framer motion, scss</motion.h5>
                     <motion.p variants={page}><i>Mon petit monde à moi, où le rose est président.</i></motion.p>
                     <motion.p variants={page}>Ce site est mon havre de paix où je compte présenter mes projets personnels, peu importe le médium.</motion.p>
-                    <motion.div className="web-work-title-img" variants={page}>
+                    <motion.div className="web-work-title-img no-select" variants={page}>
                         <img src="../img/welcome_annie.png" />
                     </motion.div>
                     
                 </motion.div>
                 <div className="web-work-content">
-                    <motion.div className="mw-item" variants={page}>
+                    <motion.div className="mw-item no-select" variants={page}>
                         <a href="https://github.com/anniez12/anniesdiary" target="_blank">
                             <motion.img 
                                 initial= {{scale: 0.7}}

@@ -17,7 +17,7 @@ const page = {
 const BackPrevPage = () => {
 
     return (
-        <motion.div variants={page} initial="initial" animate="animate" className="prev-page">
+        <motion.div variants={page} initial="initial" animate="animate" className="prev-page no-select">
             <NavLink exact to="/web" className="nav-link">
                 <span>&#8592;<span class="slider"></span></span>
             </NavLink>

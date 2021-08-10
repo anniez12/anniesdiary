@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Footer = () => {
     return(
-        <motion.div>
+        <motion.div className="footer no-select">
             <p>© 2021 Annie Zhang</p>
         </motion.div>
     )
