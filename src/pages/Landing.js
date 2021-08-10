@@ -17,7 +17,7 @@ const Landing = () => {
                 y: 0,
                 transition: { delay: 1.2, duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] },
             }}>
-                <motion.div className="landing-title-container"
+                <motion.div className="landing-title-container no-select"
                     exit= {{ opacity: 0 }}>
                     <motion.div className="landing-title-single">
                         <h1>le journal d'annie</h1>
