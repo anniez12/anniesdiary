@@ -19,17 +19,17 @@ const WorkCP = () => {
         <Work>
             <motion.div id="work-cp" className="web-work">
                 <motion.div className="web-work-title" variants={page}>
-                    <motion.h2 variants={page}>café pékoe</motion.h2>
+                    <motion.h2 className="no-select" variants={page}>café pékoe</motion.h2>
                     <motion.h5 variants={page}>photoshop, illustrator, xd</motion.h5>
                     <motion.p variants={page}>Un projet d'école dont le mandat était de refaire le branding et l'interface d'un site mobile d'une entreprise de notre choix.</motion.p>
                     <motion.p variants={page}><i>Café Pékoe est un petit café vegan-friendly situé sur St-Joseph   qui offre une grande variété de breuvages et de repas rapides.</i></motion.p>
                     <motion.p variants={page}>La refonte du site a été effectuée tout en conservant le charme du café : chaleureux et jeune.</motion.p>
-                    <motion.div className="web-work-title-img" variants={page}>
+                    <motion.div className="web-work-title-img no-select" variants={page}>
                         <img src="../img/drinkingBubbleTea.png" />
                     </motion.div>
                     
                 </motion.div>
-                <div className="web-work-content">
+                <div className="web-work-content no-select">
                     <motion.div className="cp-item" variants={page}>
                         <h4>Boites publicitaires</h4>
                         <div className="cp-ads-img">

@@ -5,7 +5,7 @@ const DoodleItem = (props) => {
     return (
         <div className="doodles-work-item">
             <div className="doodles-work-img">
-                <img src={img} alt={alt} onClick={() => {
+                <img src={img} className="no-select" alt={alt} onClick={() => {
                     document.querySelector("#popup-bg").style.display="flex";
                     document.querySelector("#popup-image").src = img;
                 }}/>

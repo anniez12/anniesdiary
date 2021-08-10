@@ -32,7 +32,7 @@ const Doodles = () => {
     return (
         <>
         <Layout>
-            <div className="doodles-header">
+            <div className="doodles-header no-select">
                 <motion.div className="doodles-info" variants={pageTitle}>
                     <motion.p variants={page}>Ici se retrouve une compilation de divers réalisations faites par moi-même: des petits sketchs, des textures ou encore des modèles 3D. En d'autres mots, une présentation de mes autres intérêts!</motion.p>
                 </motion.div>

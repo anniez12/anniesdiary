@@ -29,7 +29,7 @@ const Web = () => {
    
     return (
         <Layout>
-            <div className="web">
+            <div className="web no-select">
                 <motion.div className="web-title" variants={pageTitle}>
                     <motion.h2 variants={page}>réalisations en web</motion.h2>
                 </motion.div>

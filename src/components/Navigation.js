@@ -6,7 +6,7 @@ const Navigation = () => {
 
     return (
         <motion.div 
-            className="navigation">
+            className="navigation no-select">
             <NavLink exact to="/home" className="nav-link" activeClassName="nav-active">
             <sup>01<span class="slider"></span></sup>accueil
             </NavLink>

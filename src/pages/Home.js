@@ -17,7 +17,7 @@ const page = {
 const Home = () => {
     return (
         <Layout>
-            <div className="home">
+            <div className="home no-select">
             <motion.div className="home-title">
                 <motion.h1 className="first-name" variants={page}>annie</motion.h1>
                 <motion.h1 className="last-name" variants={page}>zhang</motion.h1>
